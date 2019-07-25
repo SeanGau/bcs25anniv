@@ -107,6 +107,17 @@
 				margin: 10px;				
 			}
 			
+			.nav-item a{
+				transition: 0.3s;
+			}
+			
+			.vtimeline-content{
+				transition: 0.5s;
+			}
+			
+			.vtimeline-content:hover{
+				background: #F1FFE8;
+			}
 		</style>
 	</head>
 	<body><!--
@@ -177,7 +188,7 @@
 						</p>
 					</div>
 					<div class="container-fluid" id="info-text-activity" style="margin: 0; background-color: #FEFEFE;">		
-					<div id="vt6">
+					<div id="activity-tl">
 						<div data-vtdate="2019.09.21">
 							<h3>In Art We Care：生態永續的行動</h3>
 							<p>
@@ -260,7 +271,7 @@
 					$("#main-img-div").velocity({height:'0px'}, {delay:400, duration:800, loop:false, easing:"easeOutSine"});
 					$("#info-div").delay(800).fadeIn(1000);		
 					setTimeout(function(){
-						$('#vt6').verticalTimeline({
+						$('#activity-tl').verticalTimeline({
 							animate: 'slide'
 						});
 					}, 801);					
@@ -271,16 +282,19 @@
 				$("#img-main5").click(function(){
 					goInfo();
 				});
-				
+				var old_x = 0, old_y = 0;
 				$("#img-main5").mousemove(function(event) {
 					if(entered)
-						return;
+						return;						
 					deg = getRotationDegrees($("#img-main1"));
-					var str = 0;
-					if(deg < 30){
-						str = "+=" + (360-deg);
+					var dx = event.pageX - old_x;
+					var dy = event.pageY - old_y;
+					if(deg < 30 && (dx*dx + dy*dy)>100){
+						var str = "+=" + (360-deg);
 						$("#img-main1").velocity('stop').velocity({rotateZ:str}, {duration:4000, loop:false, easing:'spring'});
-					}
+					}					
+					old_x = event.pageX;
+					old_y = event.pageY;
 				});				
 
 				$( window ).on('mousewheel', function(event) {
