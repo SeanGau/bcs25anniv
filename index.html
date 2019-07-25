@@ -1,0 +1,273 @@
+<html lang="zh-Hant-TW">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>竹圍工作室25周年</title>
+		<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+		<link href="http://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/vertical-timeline.css">
+		<style>  <!--視窗大小控制-->
+			@media (min-width: 576px) {
+				#sm-screen{
+				}
+				#nm-screen{
+				}
+			}
+			@media (min-width: 768px) {
+				#sm-screen{
+				}
+				#nm-screen{
+				}
+			}
+		</style>
+		<style> <!--map style-->
+		</style>
+		<style type="text/css"> <!--other style-->
+			html, body {
+				height: 100%;
+			}
+			a, p, h1, h2 {
+				font-family: 'noto sans tc';
+				text-decoration: none;
+			}
+			#sm-screen, #nm-screen {
+				height: 100vh;
+			}
+			#nm-screen {
+			}
+			.img-main {
+				position: absolute; 
+				margin: auto; 
+				top:0; bottom:0; left:0; right:0;				
+			}
+			
+			.arrow {
+				position: absolute;
+				left: 50%;
+				top: 79%;
+				transform-origin: 50% 50%;
+				transform: translate3d(-50%, -50%, 0);
+			}
+
+			.arrow-1 {
+				animation: arrow-movement 2s ease-in-out infinite;
+			}
+
+			.arrow-2 {
+				animation: arrow-movement 2s 1s ease-in-out infinite;
+			}
+
+			.arrow:before,
+			.arrow:after {
+				background: #A0F00A;
+				content: '';
+				display: block;
+				height: 3px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 30px;
+			}
+
+			.arrow:before {
+				transform: rotate(45deg) translateX(-23%);
+				transform-origin: top left;
+			}
+
+			.arrow:after {
+				transform: rotate(-45deg) translateX(23%);
+				transform-origin: top right;
+			}
+
+			@keyframes arrow-movement {
+			  0% {
+				opacity: 0;
+				top: 77%;
+			  }
+			  60% {
+				opacity: 1;
+			  }
+			  100% {
+				opacity: 0;
+			  }
+			}
+			
+			#info-text-main {
+				background-color: #0C5D6F;
+				color: white;
+				padding: 5%;
+				font-size: 1em;
+			}
+			
+			.activity-box {
+				border: 1px solid black;
+				margin: 10px;				
+			}
+			
+			#vt6 p, h3{
+				padding: 1%;
+			}
+		</style>
+	</head>
+	<body><!--
+			<div id="sm-screen" style="border-radius: 20px;">
+				<div class="d-flex flex-column"><h2>手機螢幕尺寸</h2></div>
+			</div>-->
+			<div id="nm-screen" class="container-fluid" style="margin: 0; padding: 0;">
+				<div id="main-img-div" style="overflow:hidden; height: 100vh; position:relative">
+					<img src="src/main1.png" class="img-main" id="img-main1" style="max-width:120%; max-height:120%;">
+					<img src="src/text01.png" class="img-main" id="img-main2" style="max-width:80%; max-height:80%;">
+					<img src="src/text02.png" class="img-main" id="img-main3" style="max-width:80%; max-height:80%;">
+					<img src="src/text03.png" class="img-main" id="img-main4" style="max-width:80%; max-height:80%;">
+					<img src="src/text04.png" class="img-main" id="img-main5" style="max-width:80%; max-height:80%;">
+				</div>
+				<div class="arrow arrow-1"></div>
+				<div class="arrow arrow-2"></div>
+				<div id="info-div" class="container-fluid" style="display:none; margin:0; padding: 0;">
+					<nav class="navbar navbar-expand-lg navbar-light" style="position: fixed; width: 100%; z-index: 9999; background-color: rgba(225,239,216,0.9); ">
+					    <a class="navbar-brand" href="#">
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<img src="src/head.png" class="navbar-brand" id="img-head" style="max-height: 100px;" onClick="history.go(0);">
+					    </a>
+						<div class="collapse navbar-collapse" id="navbarNav" style="padding-top: 30px;">
+							<ul class="navbar-nav mr-auto">
+							    <li class="nav-item">
+									<a class="nav-link" href="#info-text-main">關於二十五週年</a>
+							    </li>
+							    <li class="nav-item">
+									<a class="nav-link" href="#info-text-activity">活動資訊</a>
+							    </li>
+							    <li class="nav-item">
+									<a class="nav-link" href="#info-text-activity">相關文章</a>
+							    </li>
+							    <li class="nav-item">
+									<a class="nav-link" href="#info-text-activity">影音紀錄</a>
+							    </li>
+							    <li class="nav-item">
+									<a class="nav-link" href="#info-text-activity">媒體報導</a>
+							    </li>
+							    <li class="nav-item">
+									<a class="nav-link" href="#info-text-activity">合作贊助</a>
+							    </li>
+							</ul>
+						</div>
+					</nav>
+					
+					<div id="info-text-main" class="container-fluid justify-content" style="padding-top: 30vh; min-height: 100vh;">
+						<p>
+							得說環集河戰會知片世圖有舉之紙的雖何他商一曾溫至必同快雙聯的如；量等市對銀同、以看中去技說當但讀開求到孩選要個、地學麗、談並兩；千不服化舉可選雨是生地感性次場以系。他機物境了技示認！的火於路後，認現者語科用……業臺成，王色去的情的海任北重、它式理年不，青及養筆種同朋防神不物華安日說的有。不需新。<br>
+							<br>
+							要調團防，圖一求同響少草車我人質他習都聽電國發人部日始在們麼人亞部加月太、地發為。片子久戲響腳當那本母們我來報陸流了離老？能前外北是麼，首們難受開怎。而就解都品媽轉當請沒十一英式臺法做中書加兩。<br>
+							<br>
+							不留推經留國一文校作現起何都麼故子目她阿笑很面量就？我後經紅金能指不合利不的國樓些張推，日真能、會小本影。<br>
+							<br>
+							可技他，滿行實轉當地的日近！差資灣了方到會體的一的覺千記來；地把主，語時日？<br>
+							<br>
+							夫為此來沒數也望，要成自的列牛本有且，德聞足得年小沒化的中濟場媽金。灣也吃角少，飯可傷重起、保清阿半電重，密富自這已。死日異包；葉金公告了清願越時解的何過像？變面間父房；朋念確來要飛但同過有標光，高明可走或：修到華對研此賽成臺把候任上海……城有羅怎人後長時樂它平；成節立的這開升自參故轉心方應物色，真生界女我，太住開晚老東外分星良東和放子水音我了利資：大一大不十語腳似排國個文事心是利，關認我顧？們是知非時，色教由有似都也然：影了通布有車也成影裡企角是。陸親質洲羅事一們報錯國及以意麼……人此先不英，資靜美地班這計來高不了子冷地界河與？
+						</p>
+					</div>
+					<div class="container-fluid" style="margin: 0; margin-top: 50vh; background-color: #C8D0D2;">		
+					<div id="vt6">
+						<div data-vtdate="September 2016">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<p>
+								Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
+							</p>
+						</div>
+						<div data-vtdate="March 2016">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<p>
+								Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
+							</p>
+						</div>
+						<div data-vtdate="January 2016">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<p>
+								Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
+							</p>
+						</div>
+						<div data-vtdate="September 2016">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<p>
+								Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
+							</p>
+						</div>
+					</div><!-- End vt6 -->
+					</div>
+					<div id="info-text-activity" class="container-fluid justify-content" style="margin-top: 50vh; height: 50vh; background-color: #666666;">
+					
+					</div>
+				</div>
+			</div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>			
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.min.js"></script>
+			<script src="js/jquery.mousewheel.min.js"></script>
+			<script src="js/vertical-timeline.js"></script>
+			<script>
+				var entered = false;
+				function rot(){
+					$("#img-main1").velocity({rotateZ:'360deg'}, {duration:10000, loop:false, easing:"spring"});
+				};
+				
+				function getRotationDegrees(obj) {
+					var matrix = obj.css("-webkit-transform") ||
+					obj.css("-moz-transform")    ||
+					obj.css("-ms-transform")     ||
+					obj.css("-o-transform")      ||
+					obj.css("transform");
+					if(matrix !== 'none') {
+						var values = matrix.split('(')[1].split(')')[0].split(',');
+						var a = values[0];
+						var b = values[1];
+						var angle = Math.round(Math.atan2(b, a) * (180/Math.PI));
+					} else { var angle = 0; }
+					return (angle < 0) ? angle + 360 : angle;
+				}
+				
+				function goInfo(){
+					if(entered)
+						return;	
+					entered = true;
+					$("#img-main5").velocity({left: "-100%"}, {duration:400, loop:false, easing:"easeInSine"});
+					$("#img-main2").velocity({top: "-200%"}, {duration:400, loop:false, easing:"easeInSine"});
+					$("#img-main3").velocity({left: "100%"}, {duration:400, loop:false, easing:"easeInSine"});
+					$("#img-main4").velocity({top: "200%"}, {duration:400, loop:false, easing:"easeInSine"});
+					$("#img-main1").velocity("stop").velocity({opacity:'0'}, {duration:500, loop:false, easing:"easeInSine"});
+					$(".arrow").fadeOut(500);
+					$("#main-img-div").velocity({height:'0px'}, {delay:400, duration:800, loop:false, easing:"easeOutSine"});
+					$("#info-div").delay(800).fadeIn(1000);		
+					setTimeout(function(){
+						$('#vt6').verticalTimeline({
+							animate: 'slide'
+						});
+					}, 1800);					
+				}
+				
+				rot();
+				
+				$("#img-main5").click(function(){
+					goInfo();
+				});
+				
+				$("#img-main5").mousemove(function(event) {
+					if(entered)
+						return;
+					deg = getRotationDegrees($("#img-main1"));
+					var str = 0;
+					if(deg < 30){
+						str = "+=" + (360-deg);
+						$("#img-main1").velocity('stop').velocity({rotateZ:str}, {duration:2500, loop:false, easing:'spring'});
+					}
+				});				
+
+				$( window ).on('mousewheel', function(event) {
+					goInfo();
+				});
+
+			</script>
+	</body>
+</html>
