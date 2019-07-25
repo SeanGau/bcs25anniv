@@ -27,9 +27,11 @@
 			html, body {
 				height: 100%;
 			}
-			a, p, h1, h2 {
-				font-family: 'noto sans tc';
+			a, p, h1, h2, h3 {
+				font-family: 'noto sans tc', '微軟正黑體';
 				text-decoration: none;
+				text-align: justify;
+				text-justify:inter-ideograph;
 			}
 			#sm-screen, #nm-screen {
 				height: 100vh;
@@ -105,9 +107,6 @@
 				margin: 10px;				
 			}
 			
-			#vt6 p, h3{
-				padding: 1%;
-			}
 		</style>
 	</head>
 	<body><!--
@@ -125,7 +124,7 @@
 				<div class="arrow arrow-1"></div>
 				<div class="arrow arrow-2"></div>
 				<div id="info-div" class="container-fluid" style="display:none; margin:0; padding: 0;">
-					<nav class="navbar navbar-expand-lg navbar-light" style="position: fixed; width: 100%; z-index: 9999; background-color: rgba(225,239,216,0.9); ">
+					<nav class="navbar navbar-expand-lg navbar-light" style="position: fixed; width: 100%; z-index: 9999; background-color: rgba(255,255,255,0.95); ">
 					    <a class="navbar-brand" href="#">
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
@@ -177,36 +176,47 @@
 
 						</p>
 					</div>
-					<div class="container-fluid" style="margin: 0; margin-top: 50vh; background-color: #C8D0D2;">		
+					<div class="container-fluid" id="info-text-activity" style="margin: 0; background-color: #FEFEFE;">		
 					<div id="vt6">
 						<div data-vtdate="2019.09.21">
-							<h3>「環境永續」的行動</h3>
+							<h3>In Art We Care：生態永續的行動</h3>
 							<p>
-								北國際藝術村百里廳<br>
+								台北國際藝術村百里廳<br>
 								Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
 							</p>
 						</div>
 						<div data-vtdate="2019.11.09">
-							<h3>「社會實踐」的網絡</h3>
+							<h3>In Art We Connect：社會實踐的網絡</h3>
 							<p>
+								社會創新實驗中心<br>
 								Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
 							</p>
 						</div>
 						<div data-vtdate="2019.12.14">
-							<h3>「創藝人才」的養成</h3>
+							<h3>In Art We Cultivate：創藝人才的養成</h3>
 							<p>
+								北師美術館<br>
 								Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
 							</p>
 						</div>
 						<div data-vtdate="2020.02.15">
-							<h3>「獨立機構」的發展</h3>
+							<h3>In Art We Create：文化空間的發展</h3>
 							<p>
+								華山文化園區拱廳<br>
+								Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
+							Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
+							</p>
+						</div>
+						<div data-vtdate="2020.02.16">
+							<h3>In Art We Collaborate：國際交流的動能</h3>
+							<p>
+								華山文化園區拱廳<br>
 								Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
 							</p>
 						</div>
 					</div><!-- End vt6 -->
 					</div>
-					<div id="info-text-activity" class="container-fluid justify-content" style="margin-top: 50vh; height: 50vh; background-color: #666666;">
+					<div id="info-text-support" class="container-fluid justify-content" style="min-height: 100vh; background-color: #666666;">
 					
 					</div>
 				</div>
@@ -253,7 +263,7 @@
 						$('#vt6').verticalTimeline({
 							animate: 'slide'
 						});
-					}, 1800);					
+					}, 801);					
 				}
 				
 				rot();
@@ -269,7 +279,7 @@
 					var str = 0;
 					if(deg < 30){
 						str = "+=" + (360-deg);
-						$("#img-main1").velocity('stop').velocity({rotateZ:str}, {duration:2500, loop:false, easing:'spring'});
+						$("#img-main1").velocity('stop').velocity({rotateZ:str}, {duration:4000, loop:false, easing:'spring'});
 					}
 				});				
 
