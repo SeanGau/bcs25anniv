@@ -16,7 +16,7 @@
     position: absolute;
     height: 100%;
     width: 4px;
-    background: #000;
+    background: #666;
     top: 0;
     bottom: 0;
     left: 0;
@@ -37,7 +37,7 @@
   right: 0;
   margin: 0 auto;
   border-radius: 50%;
-  background: #000; }
+  background: #666; }
 
 .vtimeline-block {
   width: 45%;
@@ -52,7 +52,7 @@
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left: 10px solid #eee;
+    border-left: 10px solid #E1EFD8;
     border-right: none; }
 
 .vtimeline-right {
@@ -69,7 +69,7 @@
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: none;
-    border-right: 10px solid #eee; }
+    border-right: 10px solid #E1EFD8; }
 
 .vtimeline-date {
   position: absolute;
@@ -112,14 +112,14 @@
       border-top: 10px solid transparent;
       border-bottom: 10px solid transparent;
       border-left: none;
-      border-right: 10px solid #eee; }
+      border-right: 10px solid #E1EFD8; }
   .vtimeline-date {
     position: relative;
     display: block;
     top: 0;
     left: 0;
     right: auto;
-    background: #eee; }
+    background: #E1EFD8; }
   .vtimeline-right .vtimeline-date {
     right: auto; }
   .vtimeline.basic .vtimeline-date {

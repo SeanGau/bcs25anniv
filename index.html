@@ -3,9 +3,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>竹圍工作室25周年</title>
-		<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="src/25anniv.ico">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-		<link href="http://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" type="text/css">
+		<link href="css/notosanstc.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="css/vertical-timeline.css">
 		<style>  <!--視窗大小控制-->
 			@media (min-width: 576px) {
@@ -98,7 +98,7 @@
 			#info-text-main {
 				background-color: #0C5D6F;
 				color: white;
-				padding: 5%;
+				padding: 10%;
 				font-size: 1em;
 			}
 			
@@ -225,7 +225,14 @@
 								Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
 							</p>
 						</div>
-					</div><!-- End vt6 -->
+						<div data-vtdate="2020.05.07-05.08">
+							<h3>In Art We Trust竹圍工作室25週年國際論壇＋25週年慶祝活動</h3>
+							<p>
+								華山烏梅劇院、竹圍工作室<br>
+								Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
+							</p>
+						</div>
+					</div><!-- End vt-->
 					</div>
 					<div id="info-text-support" class="container-fluid justify-content" style="min-height: 100vh; background-color: #666666;">
 					
@@ -289,7 +296,7 @@
 					deg = getRotationDegrees($("#img-main1"));
 					var dx = event.pageX - old_x;
 					var dy = event.pageY - old_y;
-					if(deg < 30 && (dx*dx + dy*dy)>100){
+					if(deg < 30 && (dx*dx + dy*dy)>400){
 						var str = "+=" + (360-deg);
 						$("#img-main1").velocity('stop').velocity({rotateZ:str}, {duration:4000, loop:false, easing:'spring'});
 					}					
