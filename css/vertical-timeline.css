@@ -73,13 +73,13 @@
 
 .vtimeline-date {
   position: absolute;
-  padding: 1em;
+  padding: 0em;
   left: 55%;
   top: 15px; }
 
 .vtimeline-content {
   background: #E1EFD8;  
-	padding: 1em;
+  padding: 1em;
   transition: 0.5s ease all; }
 
 .vt-animate-fade {
@@ -119,11 +119,10 @@
     top: 0;
     left: 0;
     right: auto;
+	padding: 1em; 
     background: #E1EFD8; }
   .vtimeline-right .vtimeline-date {
     right: auto; }
-  .vtimeline.basic .vtimeline-date {
-    padding: 10px 10px 0 10px; }
   .vt-animate-slide .vtimeline-content {
     -webkit-transform: translateX(100%);
             transform: translateX(100%); } }
