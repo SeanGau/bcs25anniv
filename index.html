@@ -111,6 +111,11 @@
 				transition: 0.3s;
 			}
 			
+			.nav-item a:hover, .nav-clicked{	
+				border-bottom-width: 2px;
+				border-bottom-style: solid;
+				padding: 1px;
+			}
 			.vtimeline-content{
 				transition: 0.5s;
 			}
@@ -123,6 +128,7 @@
 				height: 5vh;
 				margin: 2vh;
 			}
+			
 		</style>
 	</head>
 	<body><!--
@@ -141,7 +147,7 @@
 				<div class="arrow arrow-1"></div>
 				<div class="arrow arrow-2"></div>
 				<div id="info-div" class="container-fluid" style="display:none; margin:0; padding: 0;">
-					<nav class="navbar navbar-expand-lg navbar-light" style="position: fixed; width: 100%; z-index: 9999; background-color: rgba(255,255,255,0.95); ">
+					<nav class="navbar navbar-expand-lg navbar-light" style="padding-left: 10%; position: fixed; width: 100%; z-index: 9999; background-color: rgba(255,255,255,0.95); ">
 					    <a class="navbar-brand" href="#">
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
@@ -151,19 +157,19 @@
 						<div class="collapse navbar-collapse" id="navbarNav" style="padding-top: 30px;">
 							<ul class="navbar-nav mr-auto">
 							    <li class="nav-item">
-									<a class="nav-link" id="li-main" href="#info-text-main">關於二十五週年</a>
+									<a class="nav-link" id="li-main" href="#info-text-main" style="border-bottom-color: #EA5520;">關於二十五週年</a>
 							    </li>
 							    <li class="nav-item">
-									<a class="nav-link" id="li-activity" href="#info-text-activity">活動資訊</a>
+									<a class="nav-link" id="li-activity" href="#info-text-activity" style="border-bottom-color: #0C5D6F;">活動資訊</a>
 							    </li>
 							    <li class="nav-item">
-									<a class="nav-link" href="http://bambooculture.com/article/communitynews/all" target="_blank">相關文章</a>
+									<a class="nav-link" href="http://bambooculture.com/25anniv" target="_blank" style="border-bottom-color: #E5E634;">相關文章</a>
 							    </li>
 							    <li class="nav-item">
-									<a class="nav-link" href="http://bambooculture.com/media" target="_blank">影音紀錄</a>
+									<a class="nav-link" href="http://bambooculture.com/25anniv" target="_blank" style="border-bottom-color: #7FCDEC;">影音紀錄</a>
 							    </li>
 							    <li class="nav-item">
-									<a class="nav-link" href="http://bambooculture.com/article/report" target="_blank">媒體報導</a>
+									<a class="nav-link" href="http://bambooculture.com/25anniv" target="_blank" style="border-bottom-color: #C8D0D2;">媒體報導</a>
 							    </li>
 							    <!--li class="nav-item">
 									<a class="nav-link" id="li-support" href="#info-text-support">合作贊助</a>
@@ -193,56 +199,57 @@
 
 						</p>
 					</div>
-					<div class="container-fluid" id="info-text-activity" style="margin: 0; background-color: #FEFEFE;">		
+					<div class="container-fluid" id="info-text-activity" style="padding:0; margin: 0; background-color: #FEFEFE;">		
 					<div id="activity-tl">
 						<div data-vtdate="2019.09.21">
-							<h3>In Art We Care：生態永續的行動</h3>
+							<h4>In Art We Care：生態永續的行動</h4>
 							<p>
 								<b>@台北國際藝術村百里廳</b><br>
 								生態是竹圍工作室長期關心的方向，工作坊中，將以「藝術行動計畫」切入，邀請相關領域工作者，一同討論如何以長期、持續的行動計畫，回應廣大迫切的生態議題。
 								</p>
 						</div>
 						<div data-vtdate="2019.11.09">
-							<h3>In Art We Connect：社會實踐的網絡</h3>
+							<h4>In Art We Connect：社會實踐的網絡</h4>
 							<p>
 								<b>@TBC</b><br>
 								藝術與社會交往的介面多元，多元文化、社會創新、弱勢族群關懷、性別、醫療⋯⋯在交流工作坊中，我們邀集相關領域工作者，分享各自在不同議題的實踐策略、趨勢觀察，以及問題與挑戰。
 								</p>
 						</div>
 						<div data-vtdate="2019.12.14">
-							<h3>In Art We Cultivate：創藝人才的養成</h3>
+							<h4>In Art We Cultivate：創藝人才的養成</h4>
 							<p>
 								<b>@北師美術館</b><br>
 								伴隨著當代藝術生態的發展演變，藝術創作者與從業者如何持續成長？藝術機構在藝術家養成和藝術行政的培育如何開啟新向度？本次工作坊，邀請各單位開啟對話契機。
 								</p>
 						</div>
 						<div data-vtdate="2020.02.15">
-							<h3>In Art We Create：文化空間的發展</h3>
+							<h4>In Art We Create：文化空間的發展</h4>
 							<p>
 								<b>@華山文化園區拱廳</b><br>
 								竹圍工作室為臺灣第一個非營利文化空間，擁有25年的獨立國際藝術進駐空間及創作展演場域。2020年起，讓我們在本場工作坊中，一起探究如何讓獨立文化空間深度串聯及永續經營，朝向共享資源、共創未來之路。
 								</p>
 						</div>
 						<div data-vtdate="2020.02.16">
-							<h3>In Art We Collaborate：國際交流的動能</h3>
+							<h4>In Art We Collaborate：國際交流的動能</h4>
 							<p>
 								<b>@華山文化園區拱廳</b><br>
 								跨國展覽、國際研究、國際網絡連結，以民間發起的國際交流可以有何種活力動能與多元樣貌？在國際局勢迅速變遷的時代，我們又需要什麼樣的國際連結策略？邀請大家一同交流討論！
 								</p>
 						</div>
 						<div data-vtdate="2020.05.07-05.08">
-							<h3>In Art We Trust 竹圍工作室25週年國際論壇<br>＋25週年慶祝活動</h3>
+							<h4>In Art We Trust 竹圍工作室25週年國際論壇<br>＋25週年慶祝活動</h4>
 							<p>
 								<b>@華山烏梅劇院、竹圍工作室</b><br>
 								</p>
 						</div>
 					</div><!-- End vt-->
 					</div>
-					<div id="info-text-support" class="container-fluid justify-content" style="min-height: 15vh; background-color: #AAAAAA;">
+					<div id="info-text-support" class="container-fluid justify-content" style="padding:0 10%;min-height: 15vh; background-color: #AAAAAA;">
+						<h3 style="padding: 2vh; color: #606060; border-bottom: 2px solid #666;">合作贊助</h3>
 						<img src="src/台北國際藝術村.svg" class="img-sup">			
 						<img src="src/文化部.svg" class="img-sup">
 						<img src="src/國藝會.svg" class="img-sup">			
-						<p style="bottom: 0; font-size: 0.8em; padding-left: 2vh;">
+						<p style="bottom: 0; font-size: 0.8em; padding: 2vh; margin:0;">
 						竹圍工作室 版權所有 All Rights Reserved 2019　地址：新北市淡水區中正東路二段88巷39號　電話：(02)8809-3809 | 傳真：(02)8809-3786</p>
 					</div>
 				</div>
@@ -316,21 +323,21 @@
 					goInfo();
 				});
 			</script>
-			
 			<script language="javascript">//畫面滾動
 				$(function(){
 					$('#li-main').click(function(){
-						$('html,body').animate({scrollTop:$('#info-text-main').offset().top-120},600);
+						$('html,body').animate({scrollTop:$('#info-text-main').offset().top-$('nav').height()-15},600);
 					});
 					
 					$('#li-activity').click(function(){
-						$('html,body').animate({scrollTop:$('#info-text-activity').offset().top-120},600);
+						$('html,body').animate({scrollTop:$('#info-text-activity').offset().top-$('nav').height()-15},600);
 					});
 					
 					$('#li-support').click(function(){
 						$('html,body').animate({scrollTop:$('#info-text-support').offset().top},600);
 					});	
 				});
+				
 			</script>
 	</body>
 </html>

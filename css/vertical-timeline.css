@@ -9,14 +9,14 @@
 */
 .vtimeline {
   position: relative;
-  padding: 30px;
+  padding: 10%;
   overflow: hidden; }
   .vtimeline:before {
     content: '';
     position: absolute;
     height: 100%;
     width: 4px;
-    background: #666;
+    background: #AAAAAA;
     top: 0;
     bottom: 0;
     left: 0;
@@ -37,7 +37,7 @@
   right: 0;
   margin: 0 auto;
   border-radius: 50%;
-  background: #666; }
+  background: #AAAAAA; }
 
 .vtimeline-block {
   width: 45%;
@@ -96,7 +96,7 @@
 
 @media only screen and (max-width: 992px) {
   .vtimeline:before {
-    left: 30px;
+    left: 10%;
     right: auto;
     margin: 0; }
   .vtimeline-icon {
