@@ -111,7 +111,7 @@
 				transition: 0.3s;
 			}
 			
-			.nav-item a:hover, .nav-clicked{	
+			.nav-item a:hover, .nav-item.active{	
 				border-bottom-width: 2px;
 				border-bottom-style: solid;
 				padding: 1px;
@@ -131,7 +131,7 @@
 			
 		</style>
 	</head>
-	<body><!--
+	<body data-spy="scroll" data-target=".navbar" data-offset="100"><!--
 			<div id="sm-screen" style="border-radius: 20px;">
 				<div class="d-flex flex-column"><h2>手機螢幕尺寸</h2></div>
 			</div>-->
@@ -157,19 +157,19 @@
 						<div class="collapse navbar-collapse" id="navbarNav" style="padding-top: 30px;">
 							<ul class="navbar-nav mr-auto">
 							    <li class="nav-item">
-									<a class="nav-link" id="li-main" href="#info-text-main" style="border-bottom-color: #EA5520;">關於二十五週年</a>
+									<a class="nav-link active" id="li-main" href="#info-text-main" style="border-bottom-color: #EA5520;">關於二十五週年</a>
 							    </li>
 							    <li class="nav-item">
 									<a class="nav-link" id="li-activity" href="#info-text-activity" style="border-bottom-color: #0C5D6F;">活動資訊</a>
 							    </li>
 							    <li class="nav-item">
-									<a class="nav-link" href="http://bambooculture.com/25anniv" target="_blank" style="border-bottom-color: #E5E634;">相關文章</a>
+									<a class="nav-link" href="http://bambooculture.com/25anniv/news" target="_blank" style="border-bottom-color: #E5E634;">相關文章</a>
 							    </li>
 							    <li class="nav-item">
-									<a class="nav-link" href="http://bambooculture.com/25anniv" target="_blank" style="border-bottom-color: #7FCDEC;">影音紀錄</a>
+									<a class="nav-link" href="http://bambooculture.com/25anniv/media" target="_blank" style="border-bottom-color: #7FCDEC;">影音紀錄</a>
 							    </li>
 							    <li class="nav-item">
-									<a class="nav-link" href="http://bambooculture.com/25anniv" target="_blank" style="border-bottom-color: #C8D0D2;">媒體報導</a>
+									<a class="nav-link" href="http://bambooculture.com/25anniv/reports" target="_blank" style="border-bottom-color: #C8D0D2;">媒體報導</a>
 							    </li>
 							    <!--li class="nav-item">
 									<a class="nav-link" id="li-support" href="#info-text-support">合作贊助</a>
@@ -284,6 +284,7 @@
 					if(entered)
 						return;	
 					entered = true;
+					$("#li-main").addClass("active");
 					$("#img-main5").velocity({left: "-100%"}, {duration:400, loop:false, easing:"easeInSine"});
 					$("#img-main2").velocity({top: "-200%"}, {duration:400, loop:false, easing:"easeInSine"});
 					$("#img-main3").velocity({left: "100%"}, {duration:400, loop:false, easing:"easeInSine"});
