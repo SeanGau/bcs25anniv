@@ -7,20 +7,6 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/vertical-timeline.css">
-		<style>  <!--視窗大小控制-->
-			@media (min-width: 576px) {
-				#sm-screen{
-				}
-				#nm-screen{
-				}
-			}
-			@media (min-width: 768px) {
-				#sm-screen{
-				}
-				#nm-screen{
-				}
-			}
-		</style>
 		<style> <!--map style-->
 		</style>
 		<style type="text/css"> <!--other style-->
@@ -38,8 +24,7 @@
 			#sm-screen, #nm-screen {
 				height: 100vh;
 			}
-			#nm-screen {
-			}
+			
 			.img-main {
 				position: absolute; 
 				margin: auto; 
@@ -141,12 +126,22 @@
 				border: 2px solid #C1CFB8;
 				padding: 0 0.5em;
 			}
+			
+			
+			@media (max-width: 992px) {
+				#info-text-activity {
+				}
+				#img-head {
+					max-width: 80%;
+					padding:0 5%
+				}
+				#img-main1 {
+					left: -10%;
+				}
+			}
 		</style>
 	</head>
-	<body data-spy="scroll" data-target=".navbar" data-offset="130"><!--
-			<div id="sm-screen" style="border-radius: 20px;">
-				<div class="d-flex flex-column"><h2>手機螢幕尺寸</h2></div>
-			</div>-->
+	<body data-spy="scroll" data-target=".navbar" data-offset="130">
 			<div id="nm-screen" class="container-fluid" style="margin: 0; padding: 0;">
 				<a href="#">
 				<div id="main-img-div" style="overflow:hidden; height: 100vh; position:relative">
@@ -183,9 +178,6 @@
 							    <li class="nav-item">
 									<a class="nav-link" href="http://bambooculture.com/25anniv/reports" target="_blank" style="border-bottom-color: #C8D0D2;">媒體報導</a>
 							    </li>
-							    <!--li class="nav-item">
-									<a class="nav-link" id="li-support" href="#info-text-support">合作贊助</a>
-							    </li-->
 							</ul>
 						</div>
 					</nav>
@@ -257,7 +249,7 @@
 					</div><!-- End time line-->
 					</div>
 					<div id="info-text-support" class="container-fluid justify-content" style="padding:0 10%;min-height: 15vh; background-color: #AAAAAA;">
-						<h3 style="padding: 2vh; color: #606060; border-bottom: 2px solid #666;">合作贊助</h3>
+						<h3 style="padding: 0 2vh; color: #606060; border-bottom: 2px solid #666;">合作贊助</h3>
 						<img src="src/台北國際藝術村.svg" class="img-sup">			
 						<img src="src/文化部.svg" class="img-sup">
 						<img src="src/國藝會.svg" class="img-sup">			
