@@ -273,6 +273,7 @@
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.min.js"></script>
 			<script src="js/jquery.mousewheel.min.js"></script>
 			<script src="js/vertical-timeline.js"></script>
+			<script src="js/jquery.touchSwipe.min.js"></script>
 			<script>
 				var entered = false;
 				function rot(){
@@ -336,8 +337,12 @@
 					goInfo();
 				});
 				
-				$( window ).on("swipe",function(){
-					goInfo();
+				$("#img-main5").swipe({
+					threshold: 5,
+					swipe:function(event, direction, distance, duration, fingerCount, fingerData, currentDirection) {
+						//console.log([event, direction, distance, duration, fingerCount, fingerData, currentDirection]);
+						goInfo();						
+					}
 				});
 				
 			</script>
