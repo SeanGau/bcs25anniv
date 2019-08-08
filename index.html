@@ -32,6 +32,8 @@
 				text-decoration: none;
 				text-align: justify;
 				text-justify:inter-ideograph;
+				line-height: 2em;
+				letter-spacing: 0.2px;
 			}
 			#sm-screen, #nm-screen {
 				height: 100vh;
@@ -102,6 +104,12 @@
 				font-size: 1em;
 			}
 			
+			#info-text-activity {
+				padding: 0; 
+				margin: 0; 
+				background-color: #FEFEFE;
+			}
+			
 			.activity-box {
 				border: 1px solid black;
 				margin: 10px;				
@@ -131,7 +139,7 @@
 			
 		</style>
 	</head>
-	<body data-spy="scroll" data-target=".navbar" data-offset="100"><!--
+	<body data-spy="scroll" data-target=".navbar" data-offset="130"><!--
 			<div id="sm-screen" style="border-radius: 20px;">
 				<div class="d-flex flex-column"><h2>手機螢幕尺寸</h2></div>
 			</div>-->
@@ -199,7 +207,7 @@
 
 						</p>
 					</div>
-					<div class="container-fluid" id="info-text-activity" style="padding:0; margin: 0; background-color: #FEFEFE;">		
+					<div class="container-fluid" id="info-text-activity">		
 					<div id="activity-tl">
 						<div data-vtdate="2019.09.21">
 							<h4>In Art We Care：生態永續的行動</h4>
@@ -264,7 +272,6 @@
 				function rot(){
 					$("#img-main1").velocity({rotateZ:'360deg'}, {duration:10000, loop:false, easing:"spring"});
 				};
-				
 				function getRotationDegrees(obj) {
 					var matrix = obj.css("-webkit-transform") ||
 					obj.css("-moz-transform")    ||
@@ -278,13 +285,12 @@
 						var angle = Math.round(Math.atan2(b, a) * (180/Math.PI));
 					} else { var angle = 0; }
 					return (angle < 0) ? angle + 360 : angle;
-				}
+				};
 				
 				function goInfo(){
 					if(entered)
 						return;	
 					entered = true;
-					$("#li-main").addClass("active");
 					$("#img-main5").velocity({left: "-100%"}, {duration:400, loop:false, easing:"easeInSine"});
 					$("#img-main2").velocity({top: "-200%"}, {duration:400, loop:false, easing:"easeInSine"});
 					$("#img-main3").velocity({left: "100%"}, {duration:400, loop:false, easing:"easeInSine"});
@@ -297,9 +303,9 @@
 						$('#activity-tl').verticalTimeline({
 							animate: 'slide'
 						});
-					}, 801);					
-				}
-				
+						$("#li-main").addClass("active");
+					}, 801);			
+				};
 				rot();
 				
 				$("#img-main5").click(function(){
