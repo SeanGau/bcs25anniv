@@ -5,7 +5,7 @@
 		<title>竹圍工作室25周年</title>
 		<link rel="shortcut icon" type="image/x-icon" href="src/25anniv.ico">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-		<link href="css/notosanstc.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/vertical-timeline.css">
 		<style>  <!--視窗大小控制-->
 			@media (min-width: 576px) {
@@ -28,12 +28,12 @@
 				height: 100%;
 			}
 			a, p, h1, h2, h3, h4, h5 {
-				font-family: 'noto sans tc', '微軟正黑體';
+				font-family: 'Noto Sans TC', sans-serif;
 				text-decoration: none;
 				text-align: justify;
 				text-justify:inter-ideograph;
 				line-height: 2em;
-				letter-spacing: 0.2px;
+				letter-spacing: 0.1px;
 			}
 			#sm-screen, #nm-screen {
 				height: 100vh;
@@ -137,6 +137,10 @@
 				margin: 2vh;
 			}
 			
+			#activity-tl div p {
+				border: 2px solid #C1CFB8;
+				padding: 0 0.5em;
+			}
 		</style>
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="130"><!--
@@ -155,7 +159,7 @@
 				<div class="arrow arrow-1"></div>
 				<div class="arrow arrow-2"></div>
 				<div id="info-div" class="container-fluid" style="display:none; margin:0; padding: 0;">
-					<nav class="navbar navbar-expand-lg navbar-light" style="padding-left: 10%; position: fixed; width: 100%; z-index: 9999; background-color: rgba(255,255,255,0.95); ">
+					<nav class="navbar navbar-expand-lg navbar-light" style="height: 128px; padding-left: 10%; position: fixed; width: 100%; z-index: 9999; background-color: rgba(255,255,255,0.95); ">
 					    <a class="navbar-brand" href="#">
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
@@ -250,7 +254,7 @@
 								<b>@華山烏梅劇院、竹圍工作室</b><br>
 								</p>
 						</div>
-					</div><!-- End vt-->
+					</div><!-- End time line-->
 					</div>
 					<div id="info-text-support" class="container-fluid justify-content" style="padding:0 10%;min-height: 15vh; background-color: #AAAAAA;">
 						<h3 style="padding: 2vh; color: #606060; border-bottom: 2px solid #666;">合作贊助</h3>
