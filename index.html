@@ -90,9 +90,25 @@
 			}
 			
 			#info-text-activity {
+				position: relative;
+				overflow: hidden;
 				padding: 0; 
 				margin: 0; 
-				background-color: #FEFEFE;
+				#background-color: #FEFEFE;
+			}
+			
+			#info-text-activity-bg {
+				position: fixed;
+				z-index: -1;
+				width: 200%;
+				height: 200%;
+				top: -50%;
+				left: -50%;
+				background-image: url("src/main2_.png");
+				background-attachment: fixed;
+				background-position: center;
+				background-size: 75%;
+				transform:rotate(0deg);
 			}
 			
 			.activity-box {
@@ -104,7 +120,7 @@
 				transition: 0.3s;
 			}
 			
-			.nav-item a:hover, .nav-item.active{	
+			.nav-item a:hover, .nav-item a.active{	
 				border-bottom-width: 2px;
 				border-bottom-style: solid;
 				padding: 1px;
@@ -213,6 +229,7 @@
 
 						</p>
 					</div>
+					<div id="info-text-activity-bg"></div>		
 					<div class="container-fluid" id="info-text-activity">		
 					<div id="activity-tl">
 						<div data-vtdate="2019.09.21">
@@ -264,7 +281,7 @@
 						<img src="src/文化部.svg" class="img-sup">
 						<img src="src/國藝會.svg" class="img-sup">			
 						<p style="bottom: 0; font-size: 0.8em; padding: 2vh; margin:0;">
-						竹圍工作室 版權所有 All Rights Reserved 2019　地址：新北市淡水區中正東路二段88巷39號　電話：(02)8809-3809 | 傳真：(02)8809-3786</p>
+						竹圍工作室 版權所有 All Rights Reserved 2019　<br>地址：新北市淡水區中正東路二段88巷39號　<br>電話：(02)8809-3809 | 傳真：(02)8809-3786</p>
 					</div>
 				</div>
 			</div>
@@ -346,6 +363,7 @@
 				});
 				
 			</script>
+			
 			<script language="javascript">//畫面滾動
 				$(function(){
 					$('#li-main').click(function(){
@@ -358,9 +376,14 @@
 					
 					$('#li-support').click(function(){
 						$('html,body').animate({scrollTop:$('#info-text-support').offset().top},600);
-					});	
+					});
 				});
 				
+				$(window).scroll(function (event) {
+					var bg_pos = "center -" + $(window).scrollTop()/20;
+					$('#info-text-activity-bg').css("background-position",bg_pos);
+					//$('#info-text-activity-bg').css("transform","rotate(" + $(window).scrollTop()/100 + "deg)");
+				});
 			</script>
 	</body>
 </html>
