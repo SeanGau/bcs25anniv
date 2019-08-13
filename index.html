@@ -141,6 +141,13 @@
 				margin: 0;
 			}
 			
+			.vtimeline-content h5 {
+				color: #FEFEFE;
+				background-color: #0C5D6F;
+				text-align: center;
+				padding: 0.5em;
+			}
+						
 			#img-main2, #img-main3, #img-main4, #img-main5 {
 				max-width: 80%;
 				max-height: 80%;
@@ -231,42 +238,42 @@
 					<div class="container-fluid" id="info-text-activity">		
 					<div id="activity-tl">
 						<div data-vtdate="2019.09.21">
-							<h4>In Art We Care：生態永續的行動</h4>
+							<h5>In Art We Care：生態永續的行動</h5>
 							<p>
 								<b>@台北國際藝術村百里廳</b><br>
 								生態是竹圍工作室長期關心的方向，工作坊中，將以「藝術行動計畫」切入，邀請相關領域工作者，一同討論如何以長期、持續的行動計畫，回應廣大迫切的生態議題。
 								</p>
 						</div>
 						<div data-vtdate="2019.11.09">
-							<h4>In Art We Connect：社會實踐的網絡</h4>
+							<h5>In Art We Connect：社會實踐的網絡</h5>
 							<p>
 								<b>@TBC</b><br>
 								藝術與社會交往的介面多元，多元文化、社會創新、弱勢族群關懷、性別、醫療⋯⋯在交流工作坊中，我們邀集相關領域工作者，分享各自在不同議題的實踐策略、趨勢觀察，以及問題與挑戰。
 								</p>
 						</div>
 						<div data-vtdate="2019.12.14">
-							<h4>In Art We Cultivate：創藝人才的養成</h4>
+							<h5>In Art We Cultivate：創藝人才的養成</h5>
 							<p>
 								<b>@北師美術館</b><br>
 								伴隨著當代藝術生態的發展演變，藝術創作者與從業者如何持續成長？藝術機構在藝術家養成和藝術行政的培育如何開啟新向度？本次工作坊，邀請各單位開啟對話契機。
 								</p>
 						</div>
 						<div data-vtdate="2020.02.15">
-							<h4>In Art We Create：文化空間的發展</h4>
+							<h5>In Art We Create：文化空間的發展</h5>
 							<p>
 								<b>@華山文化園區拱廳</b><br>
 								竹圍工作室為臺灣第一個非營利文化空間，擁有25年的獨立國際藝術進駐空間及創作展演場域。2020年起，讓我們在本場工作坊中，一起探究如何讓獨立文化空間深度串聯及永續經營，朝向共享資源、共創未來之路。
 								</p>
 						</div>
 						<div data-vtdate="2020.02.16">
-							<h4>In Art We Collaborate：國際交流的動能</h4>
+							<h5>In Art We Collaborate：國際交流的動能</h5>
 							<p>
 								<b>@華山文化園區拱廳</b><br>
 								跨國展覽、國際研究、國際網絡連結，以民間發起的國際交流可以有何種活力動能與多元樣貌？在國際局勢迅速變遷的時代，我們又需要什麼樣的國際連結策略？邀請大家一同交流討論！
 								</p>
 						</div>
 						<div data-vtdate="2020.05.07-05.08">
-							<h4>In Art We Trust 竹圍工作室25週年國際論壇<br>＋25週年慶祝活動</h4>
+							<h5>In Art We Trust 竹圍工作室25週年國際論壇＋25週年慶祝活動</h5>
 							<p>
 								<b>@華山烏梅劇院、竹圍工作室</b><br>
 								</p>
@@ -378,7 +385,7 @@
 				});
 				
 				$(window).scroll(function (event) {
-					var bg_pos = "center -" + $(window).scrollTop()/20;
+					var bg_pos = "center -" + $(window).scrollTop()/10;
 					$('#info-text-activity-bg').css("background-position",bg_pos);
 					//$('#info-text-activity-bg').css("transform","rotate(" + $(window).scrollTop()/100 + "deg)");
 				});

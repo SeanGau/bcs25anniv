@@ -72,11 +72,11 @@
     border-right: 10px solid #F9E600; }
 
 .vtimeline-date {
-  position: absolute;
-  padding: 0em;
-  font-size: 2em;
-  left: 55%;
-  #top: -0.2em; }
+	position: absolute;
+	padding: 0em;
+	font-size: 1.5em;
+	left: 55%;
+	#top: -0.2em; }
 
 .vtimeline-content {
   background: #F9E600;  
