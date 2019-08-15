@@ -37,7 +37,7 @@
   right: 0;
   margin: 0 auto;
   border-radius: 50%;
-  background: #8FC31F; }
+  background: #0C5D6F; }
 
 .vtimeline-block {
   width: 45%;
@@ -52,7 +52,7 @@
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left: 10px solid #F9E600;
+    border-left: 10px solid #0C5D6F;
     border-right: none; }
 
 .vtimeline-right {
@@ -69,7 +69,7 @@
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: none;
-    border-right: 10px solid #F9E600; }
+    border-right: 10px solid #0C5D6F; }
 
 .vtimeline-date {
 	margin: 0;
@@ -80,7 +80,7 @@
 	#top: -0.2em; }
 
 .vtimeline-content {
-  background: #F9E600;  
+  background: rgba(250,250,250,0.9);  
   padding: 1em;
   transition: 0.5s ease all; }
 
@@ -114,7 +114,7 @@
       border-top: 10px solid transparent;
       border-bottom: 10px solid transparent;
       border-left: none;
-      border-right: 10px solid #F9E600; }
+      border-right: 10px solid #0C5D6F; }
   .vtimeline-date {
     position: relative;
     display: block;
@@ -123,7 +123,7 @@
     left: 0;
     right: auto;
 	padding: 0 1em; 
-    background: #F9E600; }
+    background: rgba(250,250,250,0.9); }
   .vtimeline-right .vtimeline-date {
     right: auto; }
   .vt-animate-slide .vtimeline-content {
