@@ -103,7 +103,7 @@
                 var side = $(this).data('vtside');
                 // Add date if provided
                 if (date) {
-                    $(this).parent().prepend('<a class="vtimeline-date">' + date + '</a>');
+                    $(this).parent().prepend('<p class="vtimeline-date">' + date + '</p>');
                 }
 
                 // Add side override if given

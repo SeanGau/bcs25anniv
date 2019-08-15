@@ -37,7 +37,7 @@
   right: 0;
   margin: 0 auto;
   border-radius: 50%;
-  background: #AAAAAA; }
+  background: #8FC31F; }
 
 .vtimeline-block {
   width: 45%;
@@ -72,9 +72,10 @@
     border-right: 10px solid #F9E600; }
 
 .vtimeline-date {
+	margin: 0;
 	position: absolute;
 	padding: 0em;
-	font-size: 1.5em;
+	font-size: 2em;
 	left: 55%;
 	#top: -0.2em; }
 
@@ -117,7 +118,7 @@
   .vtimeline-date {
     position: relative;
     display: block;
-	font-size: 1em;
+	font-size: 1.5em;
     top: 0;
     left: 0;
     right: auto;
