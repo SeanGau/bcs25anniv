@@ -69,12 +69,38 @@
 				color: #666;
 				font-family: 'Noto Sans TC', sans-serif;
 				font-weight: 500;
-				#z-index: 1000;
-				#background-color: rgba(255,255,255,0.5);
-				#padding: 0 1em;
+				z-index: 1000;
+				background-color: rgba(255,255,255,0.5);
+				padding: 0 1em;
+				margin-left: 40px;
 			}
 			.tl-slide-text-only .tl-slide-content-container .tl-slide-content .tl-text {
 				margin-bottom: 30px;
+			}
+			
+			#artist-list {
+				height: 2em;
+				overflow-x: hidden;
+				overflow-y: hidden;
+				border: 2px solid #666;
+			}
+			#artist-list:hover {
+				height: 20em;
+				overflow-y: scroll;
+			}
+			.artist-anim:hover {
+				animation-play-state: paused;
+			}
+			.artist-anim {
+				animation: artist-movement 20s linear infinite;
+			}
+			@keyframes artist-movement {
+			0% {
+				margin-top: 0;
+			}
+			100% {
+				margin-top: -110em;
+			}
 			}
 		</style>
 	</head>
@@ -135,6 +161,63 @@
 						</ul>
 					</div>
 					<div class="container-fluid" id='timeline-embed' style="width: 100%; height: 400px; padding: 15px 0;"></div>
+					<div class="container-fluid" id='artist-list'>
+						<p class="text-center artist-anim">
+							林思駿_台北硬画 TAIING Studio<BR>
+							西田秀己 Hidemi Nishida<BR>
+							Lua Rivera<BR>
+							Francis Sollano<BR>
+							Ellie Irons<BR>
+							李欣芫<BR>
+							李依佩<BR>
+							Karen Beckwith<BR>
+							Veron Sung（阿V）<BR>
+							林晏竹 Lin Yen-Ju<BR>
+							葉佩如<BR>
+							余佳珍<BR>
+							方韻芝 Fong Wan Chi, Vangi<BR>
+							Krystallia Sakellariou<BR>
+							Hauritsa Haorits<BR>
+							冨田哲司Tetsushi Tomita<BR>
+							三村梓 Mimura Azusa<BR>
+							見維．巴里<BR>
+							Alessandro Carboni<BR>
+							舞蹈生態系<BR>
+							雨森信 Nov Amenomori<BR>
+							朴奉伎 Bonggi Park<BR>
+							Marcel Dinahet<BR>
+							傅美貴<BR>
+							蕭麗虹<BR>
+							王文志<BR>
+							匯川創作劇團<BR>
+							Ruud Matthes<BR>
+							Khairunnisa<BR>
+							周成樑<BR>
+							林漢鼎<BR>
+							王德瑜<BR>
+							吳瑪悧<BR>
+							黃瑞茂<BR>
+							大衛・黑利<BR>
+							HSIAO Sweet蕭淑憶<BR>
+							行深工作室<BR>
+							Kongsak Gulglangdon<BR>
+							卡特琳・古特Catherine Grout<BR>
+							吳尚霖<BR>
+							黃博志<BR>
+							楊芳宜 Fay Yang<BR>
+							洪芷寧<BR>
+							Budi Agung Kuswara (Kabul)<BR>
+							Tio Meng Samantha (Mintio)<BR>
+							Noppadon Viroonchatapun<BR>
+							Pin Sasao<BR>
+							Prasit Wichaya<BR>
+							Rinyapat Nithipatnan<BR>
+							池田一 Ichi Ikeda<BR>
+							鄭炳鴻<BR>
+							Benjamin Duke<BR>
+							Karen McCoy<BR>
+						</p>
+					</div>
 					<div id="info-text-support" class="container-fluid justify-content" style="padding:0 10%;min-height: 15vh; background-color: #AAAAAA;">
 						<h3 style="padding: 0 2vh; color: #606060; border-bottom: 2px solid #666;" id="sup-title">合作贊助</h3>
 						<img src="src/文化部.svg" class="img-sup">
@@ -177,7 +260,15 @@
 				if(!isHover)
 					$(".tl-slidenav-next").trigger("click");
 			}, 4000);
-				
+			
+			$("#artist-list p").hover(
+				function(){
+					$(this).removeClass("artist-anim");
+				},
+				function(){
+					$(this).addClass("artist-anim");
+				}
+			)
           </script>
 	</body>
 </html>
