@@ -22,13 +22,16 @@
 			html, body {
 				height: 100%;
 			}
-			a, p, h1, h2, h3, h4, h5 {
+			a, p, h1, h2, h3, h4, h5, h6{
 				font-family: 'Noto Sans TC', sans-serif;
 				text-decoration: none;
-				text-align: justify;
-				text-justify:inter-ideograph;
 				line-height: 2em;
 				letter-spacing: 0.1px;
+				margin: 0;
+			}
+			p {			
+				text-align: justify;
+				text-justify:inter-ideograph;
 			}
 			#sm-screen, #nm-screen {
 				height: 100vh;
@@ -152,21 +155,9 @@
 				color: #EA5520;
 			}
 			
-			.vtimeline-content h5 {
-				transition: 0.3s;
+			.vt-title {
 				color: #FEFEFE;
 				background-color: #0C5D6F;
-				text-align: center;
-				padding: 0.5em;
-			}
-			
-			.vtimeline-content .btn {
-				display: none;
-			}
-			
-			.vtimeline-content h5:hover {
-				color: #FEFEFE;
-				background-color: #1C6D7F;
 				text-align: center;
 				padding: 0.5em;
 			}
@@ -200,10 +191,6 @@
 				#img-main1, #img-main2, #img-main3, #img-main4, #img-main5 {
 					max-width: 90%;
 					max-height: 90%;
-				}
-				
-				.vtimeline-content .btn {
-					display: block;
 				}
 				
 				.vtimeline-date {
@@ -288,45 +275,52 @@
 					<div class="container-fluid" id="info-text-activity">		
 					<div id="activity-tl">
 						<div data-vtdate="2019.09.21">
-							<a href="http://bambooculture.com/civicrm/event/info?reset=1&id=151" target="_blank"><h5>In Art We Care：生態永續的行動</h5></a>
+							<div class="vt-title"><h5>In Art We Care：生態永續的行動</h5><h6>In Art We Care：Eco Actions</h6></div>
 							<p>
-								<b>@台北國際藝術村遊藝廳</b><br>
+								<b>@台北國際藝術村遊藝廳<br>Taipei Artist Village-Entertainment Room</b><br>
 								生態是竹圍工作室長期關心的方向，工作坊中，將以「藝術行動計畫」切入，邀請相關領域工作者，一同討論如何以長期、持續的行動計畫，回應廣大迫切的生態議題。
 							</p>
-							<a class="btn btn-info btn-lg btn-block" target="_blank" href="http://bambooculture.com/civicrm/event/info?reset=1&id=151" role="button">更多資訊</a>
+							<a class="btn btn-info btn-lg btn-block" target="_blank" href="http://bambooculture.com/civicrm/event/info?reset=1&id=151" role="button">更多資訊 Read More</a>
 						</div>
 						<div data-vtdate="2019.11.09">
-							<h5>In Art We Connect：社會實踐的網絡</h5>
+							<div class="vt-title"><h5>In Art We Connect：社會實踐的網絡</h5><h6>In Art We Connect：Social Engagement</h6></div>
 							<p>
-								<b>@CIT台北創新中心</b><br>
+								<b>@CIT台北創新中心<br>CIT Center for Innovation Taipei</b><br>
 								藝術與社會交往的介面多元，多元文化、社會創新、弱勢族群關懷、性別、醫療⋯⋯在交流工作坊中，我們邀集相關領域工作者，分享各自在不同議題的實踐策略、趨勢觀察，以及問題與挑戰。
 								</p>
+							<a class="btn btn-info btn-lg btn-block" target="_blank" href="http://bambooculture.com/civicrm/event/info?reset=1&id=158" role="button">更多資訊 Read More</a>
 						</div>
 						<div data-vtdate="2019.12.14">
-							<h5>In Art We Cultivate：創藝人才的養成</h5>
+							<div class="vt-title"><h5>In Art We Cultivate：創藝人才的養成</h5><h6>In Art We Cultivace：Creative Incubation</h6></div>
 							<p>
-								<b>@北師美術館</b><br>
+								<b>@北師美術館<br>MoNTUEMuseum of National Taipei University of Education</b><br>
 								伴隨著當代藝術生態的發展演變，藝術創作者與從業者如何持續成長？藝術機構在藝術家養成和藝術行政的培育如何開啟新向度？本次工作坊，邀請各單位開啟對話契機。
 								</p>
 						</div>
 						<div data-vtdate="2020.02.15">
-							<h5>In Art We Create：文化空間的發展</h5>
+							<div class="vt-title"><h5>In Art We Create：文化空間的發展</h5><h6>In Art We Create：Cultural Space</h6></div>
 							<p>
-								<b>@華山1914文化創意產業園區中三館二樓拱廳</b><br>
+								<b>@華山1914文化創意產業園區中三館二樓拱廳<br>Huashan 1914 Creative Park-M3 Sake Factory 2F</b><br>
 								竹圍工作室為臺灣第一個非營利文化空間，擁有25年的獨立國際藝術進駐空間及創作展演場域。2020年起，讓我們在本場工作坊中，一起探究如何讓獨立文化空間深度串聯及永續經營，朝向共享資源、共創未來之路。
 								</p>
 						</div>
 						<div data-vtdate="2020.02.16">
-							<h5>In Art We Collaborate：國際交流的動能</h5>
+							<div class="vt-title"><h5>In Art We Collaborate：國際交流的動能</h5><h6>In Art We Collaborate：Global Networks</h6></div>
 							<p>
-								<b>@華山1914文化創意產業園區中三館二樓拱廳</b><br>
+								<b>@華山1914文化創意產業園區中三館二樓拱廳<br>Huashan 1914 Creative Park-M3 Sake Factory 2F</b><br>
 								跨國展覽、國際研究、國際網絡連結，以民間發起的國際交流可以有何種活力動能與多元樣貌？在國際局勢迅速變遷的時代，我們又需要什麼樣的國際連結策略？邀請大家一同交流討論！
 								</p>
 						</div>
 						<div data-vtdate="2020.05.07-05.08">
-							<h5>In Art We Trust 竹圍工作室25週年國際論壇＋25週年慶祝活動</h5>
+							<div class="vt-title"><h5>In Art We Trust 竹圍工作室25週年國際論壇</h5><h6>In Art We Trust: BCS 25th Anniverersay International Forum</h6></div>
 							<p>
-								<b>@華山1914文化創意產業園區中三館二樓拱廳、竹圍工作室</b><br>
+								<b>@華山烏梅劇院<br>Huashan 1914 Creative Park-Umay Theater</b><br>
+								</p>
+						</div>
+						<div data-vtdate="2020.05.23-05.31">
+							<div class="vt-title"><h5>In Art We Trust 竹圍工作室25週年慶祝活動</h5><h6>In Art We Trust: BCS 25th Anniverersay Celebration Events</h6></div>
+							<p>
+								<b>@竹圍工作室<br>(dates to be announced) Bamboo Curtain Studio</b><br>
 								</p>
 						</div>
 					</div><!-- End time line-->
